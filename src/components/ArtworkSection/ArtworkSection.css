@@ -1,0 +1,207 @@
+#artwork {
+  height: 1080px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#artwork .artwork__title {
+  margin-bottom: 90px;
+  font-family: 'Aquatic Personal';
+  font-size: 6rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+  color: var(--primary-color);
+}
+
+#artwork .artwork__selection {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0 30px;
+  border-radius: 100px;
+  margin-bottom: 90px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 40%,
+    rgba(255, 255, 255, 0.6) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+#artwork .artwork__item {
+  height: inherit;
+  width: 100px;
+  background-size: 150% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#artwork .artwork__item:hover {
+  background-size: 130% auto !important;
+}
+
+#artwork .artwork__content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#artwork .artwork__samples-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+#artwork .artwork__sample {
+  width: 100%;
+  display: block;
+  outline: 5px inset rgba(255, 255, 255, 0.3);
+  outline-offset: -5px;
+  transition: outline-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#artwork .artwork__sample:hover {
+  outline-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #artwork {
+    height: 90vh;
+  }
+
+  #artwork .artwork__selection {
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+  }
+
+  #artwork .artwork__item {
+    height: 50px;
+    width: 50px;
+  }
+
+  #artwork .artwork__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #artwork .artwork__title {
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+
+  #artwork .artwork__video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  #artwork .artwork__video::before {
+    content: '';
+    height: 5px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+  }
+
+  #artwork .artwork__video iframe {
+    height: 12vw;
+    min-height: 100px;
+    width: 12vw;
+    min-width: 100px;
+    outline: 5px solid rgba(255, 255, 255, 0.3);
+  }
+
+  #artwork .artwork__samples-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 12vw));
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #artwork {
+    height: 60vh;
+  }
+
+  #artwork .container {
+    position: relative;
+  }
+
+  #artwork .container::after {
+    content: 'Scroll right to view more';
+    width: fit-content;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: 0.5rem;
+  }
+
+  #artwork .artwork__selection {
+    margin-bottom: 15px;
+  }
+
+  #artwork .artwork__item {
+    height: 45px;
+    width: 45px;
+  }
+
+  #artwork .artwork__title {
+    margin-bottom: 15px;
+  }
+
+  #artwork .artwork__video::before {
+    height: 3px;
+  }
+
+  #artwork .artwork__video iframe {
+    height: 85px;
+    min-height: 85px;
+    width: 85px;
+    min-width: 85px;
+    outline-width: 3px;
+  }
+
+  #artwork .artwork__samples-gallery {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+
+  #artwork .artwork__sample {
+    height: 85px;
+    width: 85px;
+    outline-width: 3px;
+    outline-offset: -3px;
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Aquatic Personal';
+  src: url('./fonts/AquaticPersonalUse.otf');
+}
+
+:root {
+  --primary-color: rgb(25, 19, 80);
+  --secondary-color: rgb(135, 210, 231);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

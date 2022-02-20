@@ -1,0 +1,137 @@
+#main-nav {
+  width: 100%;
+  position: fixed;
+  background-color: var(--primary-color);
+  z-index: 999;
+}
+
+#main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-nav .socials {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+}
+
+#main-nav .socials__social-link {
+  height: 50px;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#main-nav .socials__social-link + .socials__social-link {
+  margin-left: 25px;
+}
+
+#main-nav .socials__social-link:hover {
+  transform: scale(0.9);
+}
+
+#main-nav .logo {
+  flex-basis: 20%;
+  height: 105px;
+  width: 95px;
+  position: relative;
+  top: 25px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#main-nav .logo::before {
+  content: '';
+  height: 105px;
+  width: 105px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border: 95px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+#main-nav .main-menu {
+  flex-basis: 40%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+#main-nav .main-menu__link {
+  text-decoration: none;
+  font-family: 'Aquatic Personal';
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  color: #fff;
+}
+
+#main-nav .main-menu__link:hover {
+  text-decoration: underline wavy #fff 2px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #main-nav .socials__social-link {
+    height: 35px;
+  }
+
+  #main-nav .logo {
+    height: 90px;
+    width: 80px;
+  }
+
+  #main-nav .logo::before {
+    height: 80px;
+    width: 80px;
+    border-width: 80px;
+  }
+
+  #main-nav .main-menu {
+    gap: 15px;
+  }
+
+  #main-nav .main-menu__link {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-nav .socials {
+    flex-basis: 80%;
+    justify-content: flex-end;
+    order: 1;
+  }
+
+  #main-nav .socials__social-link {
+    height: 25px;
+  }
+
+  #main-nav .logo {
+    height: 40px;
+    width: 30px;
+    top: auto;
+    margin: 10px 0;
+    background-position: left center;
+  }
+
+  #main-nav .logo::before {
+    display: none;
+  }
+
+  #main-nav .main-menu {
+    display: none;
+  }
+}

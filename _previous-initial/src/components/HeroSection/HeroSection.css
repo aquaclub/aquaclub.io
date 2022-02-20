@@ -1,0 +1,66 @@
+.hero-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section-wrapper .logo {
+  position: relative;
+  font-size: 16rem;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+}
+
+.hero-section-wrapper .logo::after {
+  content: 'AquaClub';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.4);
+  animation: ocean-wave 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section-wrapper .description {
+  width: 70ch;
+  margin-top: 50px;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.25rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+@keyframes ocean-wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 35%,
+      15% 45%,
+      25% 55%,
+      40% 65%,
+      55% 65%,
+      70% 60%,
+      85% 45%,
+      100% 40%,
+      100% 100%,
+      0% 105%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 65%,
+      15% 55%,
+      25% 45%,
+      40% 35%,
+      55% 35%,
+      70% 40%,
+      85% 55%,
+      100% 60%,
+      100% 100%,
+      0% 105%
+    );
+  }
+}

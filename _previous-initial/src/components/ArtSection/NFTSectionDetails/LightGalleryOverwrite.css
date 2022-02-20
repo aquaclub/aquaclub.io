@@ -1,0 +1,30 @@
+/* LightGallery CSS Overwrite */
+.lg-on {
+  overflow-y: hidden;
+}
+
+.lg-backdrop {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.lg-toolbar .lg-counter,
+.lg-components .lg-sub-html {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.lg-toolbar .lg-icon,
+.lg-content .lg-next,
+.lg-content .lg-prev {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.lg-toolbar .lg-icon:not(.lg-rotate-right.lg-icon) {
+  margin-left: 15px;
+}
+
+.lg-toolbar .lg-icon:hover,
+.lg-content .lg-next:hover:not(.disabled),
+.lg-content .lg-prev:hover:not(.disabled) {
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,65 @@
+/* #art-section {} */
+
+#art-section .art-section-bg {
+  height: 800px;
+  display: flex;
+  border-radius: var(--border-roundness);
+  position: relative;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: var(--blur-density);
+  box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+#art-section .art-section-bg::before,
+#art-section .art-section-bg::after {
+  content: '';
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+}
+
+#art-section .art-section-bg::before {
+  top: 80%;
+  right: 90%;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#art-section .art-section-bg::after {
+  bottom: 80%;
+  left: 90%;
+  background: linear-gradient(
+    to left bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#art-section ::-webkit-scrollbar {
+  height: var(--scrollbar-height);
+  width: var(--scrollbar-height);
+}
+
+#art-section ::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#art-section ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@supports (scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.4)) {
+  #art-section {
+    scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.4);
+    scrollbar-width: thin;
+  }
+}

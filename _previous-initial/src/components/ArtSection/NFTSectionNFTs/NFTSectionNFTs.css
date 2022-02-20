@@ -1,0 +1,49 @@
+/* #nfts-section {} */
+
+#nfts-section .nfts {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#nfts-section .nft {
+  height: 85px;
+  width: 85px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  background-size: 105% 105%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-size 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#nfts-section .nft:hover {
+  background-size: 110% 110%;
+}
+
+#nfts-section .nft.active {
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8);
+  backdrop-filter: var(--blur-density);
+}
+
+#nfts-section .nft.active::after {
+  content: '';
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    circle,
+    rgba(230, 185, 35, 0.1) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  pointer-events: none;
+}

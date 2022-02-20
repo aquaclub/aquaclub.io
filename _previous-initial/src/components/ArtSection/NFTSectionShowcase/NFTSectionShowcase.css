@@ -1,0 +1,87 @@
+#art-section .nft-section-showcase {
+  height: inherit;
+  position: relative;
+  border-top-left-radius: var(--border-roundness);
+  border-bottom-left-radius: var(--border-roundness);
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#art-section .nft-section-showcase::after {
+  content: '';
+  height: 100%;
+  width: calc(100% - var(--scrollbar-height));
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  box-shadow: inset 0 25px 15px -15px rgba(255, 255, 255, 0.4),
+    inset 0 -25px 15px -15px rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+#art-section .nft-section-showcase .characters {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#art-section .nft-section-showcase .character-wrapper {
+  min-height: 300px;
+  min-width: 300px;
+  position: relative;
+}
+
+#art-section .nft-section-showcase .character-wrapper::before {
+  content: attr(data-type);
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+#art-section .nft-section-showcase .character {
+  min-height: inherit;
+  min-width: inherit;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  cursor: pointer;
+}
+
+#art-section .nft-section-showcase .character.active {
+  box-shadow: inset 0 0 20px 5px rgba(255, 255, 255, 0.4);
+}
+
+#art-section .nft-section-showcase .character:hover::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    circle,
+    rgba(230, 185, 35, 0.1) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  pointer-events: none;
+}

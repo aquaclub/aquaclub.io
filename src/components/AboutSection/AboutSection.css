@@ -1,0 +1,111 @@
+#about {
+  height: 1080px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#about .about-wrapper {
+  padding: 0 120px;
+}
+
+#about .about-wrapper__title {
+  margin-bottom: 90px;
+  font-family: 'Aquatic Personal';
+  font-size: 6rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+  color: var(--primary-color);
+}
+
+#about .about-wrapper__paragraph {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+}
+
+#about .about-wrapper__paragraph a {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-decoration: underline wavy var(--primary-color) 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+}
+
+#about .about-wrapper__paragraph a:hover {
+  font-style: italic;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #about {
+    height: 90vh;
+  }
+
+  #about .about-wrapper {
+    padding: 0 60px;
+  }
+
+  #about .about-wrapper__title {
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+
+  #about .about-wrapper__paragraph,
+  #about .about-wrapper__paragraph a {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    height: 60vh;
+  }
+
+  #about .container {
+    position: relative;
+    padding: 15px 10px 0 10px;
+  }
+
+  #about .container::after {
+    content: 'Scroll down to read more';
+    width: fit-content;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: 0.5rem;
+  }
+
+  #about .about-wrapper {
+    max-height: 55ch;
+    padding: 0;
+    overflow-y: scroll;
+  }
+
+  #about .about-wrapper__title {
+    margin-bottom: 15px;
+  }
+
+  #about .about-wrapper__paragraph,
+  #about .about-wrapper__paragraph a {
+    font-size: 1.3rem;
+  }
+
+  #about .about-wrapper__paragraph a {
+    text-decoration: underline wavy var(--primary-color) 1px;
+  }
+}
