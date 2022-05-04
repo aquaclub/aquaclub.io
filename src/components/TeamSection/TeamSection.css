@@ -292,7 +292,7 @@
   }
 
   #team .team__title {
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
 
   #team .team__wrapper::after {
@@ -331,5 +331,12 @@
   #team .team__wheel-artist-info {
     max-width: 25ch;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #team .team__title {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
   }
 }

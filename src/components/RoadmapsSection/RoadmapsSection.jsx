@@ -10,17 +10,17 @@ const RoadmapsSection = () => {
   const { selectedRoadmap, setSelectedRoadmap } = useContext(AppContext);
 
   return (
-    <div
-      id="roadmaps"
+    <section
+      id='roadmaps'
       style={{ backgroundImage: `url("${sectionBackground}")` }}
     >
-      <div className="container">
-        <h2 className="roadmaps__title">Roadmap</h2>
-        <nav className="roadmaps__nav">
-          {roadmaps.map(roadmap => (
+      <div className='container'>
+        <h2 className='roadmaps__title'>Roadmap</h2>
+        <nav className='roadmaps__nav'>
+          {roadmaps.map((roadmap) => (
             <div
               key={`Roadmap-${roadmap.name.split(' ').join('-')}`}
-              className="roadmaps__link"
+              className='roadmaps__link'
               style={{
                 backgroundImage: `${
                   selectedRoadmap.name === roadmap.name
@@ -30,22 +30,22 @@ const RoadmapsSection = () => {
               }}
               onClick={() => setSelectedRoadmap(roadmap)}
             >
-              <span className="roadmaps__link-text">{roadmap.name}</span>
+              <span className='roadmaps__link-text'>{roadmap.name}</span>
             </div>
           ))}
         </nav>
         <div
           data-active-roadmap={selectedRoadmap.name}
-          className="roadmaps__wrapper"
+          className='roadmaps__wrapper'
         >
           <img
             src={selectedRoadmap.image}
-            alt="roadmap"
-            className="roadmaps__roadmap"
+            alt='roadmap'
+            className='roadmaps__roadmap'
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

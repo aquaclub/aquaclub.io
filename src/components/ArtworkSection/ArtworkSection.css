@@ -152,7 +152,7 @@
     content: 'Scroll right to view more';
     width: fit-content;
     position: absolute;
-    bottom: -30px;
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
@@ -177,7 +177,7 @@
   }
 
   #artwork .artwork__title {
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
 
   #artwork .artwork__video::before {
@@ -185,10 +185,10 @@
   }
 
   #artwork .artwork__video iframe {
-    height: 85px;
-    min-height: 85px;
-    width: 85px;
-    min-width: 85px;
+    height: 220px;
+    min-height: 220px;
+    width: 220px;
+    min-width: 220px;
     outline-width: 3px;
   }
 
@@ -199,9 +199,36 @@
   }
 
   #artwork .artwork__sample {
-    height: 85px;
-    width: 85px;
+    height: 110px;
+    width: 110px;
     outline-width: 3px;
     outline-offset: -3px;
+  }
+}
+
+@media (max-width: 480px) {
+  #artwork .container::after {
+    bottom: -25px;
+  }
+
+  #artwork .artwork__selection {
+    padding: 5px 30px;
+  }
+
+  #artwork .artwork__title {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+  }
+
+  #artwork .artwork__video iframe {
+    height: 100px;
+    min-height: 100px;
+    width: 100px;
+    min-width: 100px;
+  }
+
+  #artwork .artwork__sample {
+    height: 50px;
+    width: 50px;
   }
 }

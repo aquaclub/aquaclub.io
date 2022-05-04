@@ -146,13 +146,14 @@
   }
 
   #roadmaps .roadmaps__title {
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
 
   #roadmaps .roadmaps__nav {
     height: fit-content;
     flex-wrap: wrap;
     padding: 15px 0;
+    margin-bottom: 0;
     background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0) 0%,
@@ -164,5 +165,12 @@
 
   #roadmaps .roadmaps__link {
     height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #roadmaps .roadmaps__title {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
   }
 }

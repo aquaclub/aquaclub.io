@@ -152,7 +152,7 @@
   }
 
   #welcome .subscription-area {
-    transform: translateY(-15px);
+    transform: translateY(0px);
   }
 
   #welcome .subscription-area__banner {
@@ -190,5 +190,11 @@
 
   #welcome .subscription-area__button {
     min-width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  #welcome .subscription-area {
+    transform: translateY(-80px);
   }
 }
