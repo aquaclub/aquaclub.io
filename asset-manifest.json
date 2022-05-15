@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aquaclub.io/static/css/main.78e79056.css",
-    "main.js": "/aquaclub.io/static/js/main.ab7e420b.js",
+    "main.js": "/aquaclub.io/static/js/main.78d3a6d0.js",
     "static/media/original-13.png": "/aquaclub.io/static/media/original-13.21b8988558ef2ffc189a.png",
     "static/media/original-06.png": "/aquaclub.io/static/media/original-06.d1751ac1a2ca0787b021.png",
     "static/media/original-08.png": "/aquaclub.io/static/media/original-08.09f96db1943349d9f588.png",
@@ -83,10 +83,10 @@
     "static/media/lg.woff2?io9a6k": "/aquaclub.io/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/aquaclub.io/index.html",
     "main.78e79056.css.map": "/aquaclub.io/static/css/main.78e79056.css.map",
-    "main.ab7e420b.js.map": "/aquaclub.io/static/js/main.ab7e420b.js.map"
+    "main.78d3a6d0.js.map": "/aquaclub.io/static/js/main.78d3a6d0.js.map"
   },
   "entrypoints": [
     "static/css/main.78e79056.css",
-    "static/js/main.ab7e420b.js"
+    "static/js/main.78d3a6d0.js"
   ]
 }
