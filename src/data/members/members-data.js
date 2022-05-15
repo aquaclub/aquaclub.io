@@ -7,76 +7,74 @@ import MEMBER_TYPE_FIVE from './../../images/members/member-type-05.png';
 
 const MEMBERS_DATA = [
   {
-    name: 'Member 1',
+    name: 'Hadjie',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Hadjie is a freelance artist and well-respected character designer from Kazakhstan. He has become well known in the art community in only 5 years and has worked on several animated films and game projects.',
     type: MEMBER_TYPE_FIVE
   },
   {
-    name: 'Member 2',
+    name: 'Rachelle',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Destiny is a visual development artist with 5 years of experience as a character designer and concept artist.',
     type: MEMBER_TYPE_FOUR
   },
   {
-    name: 'Member 3',
+    name: 'Pauline',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Pearl is a freelance concept artist and has experience working on various projects ranging from video games to kid’s illustrations and advertising.',
     type: MEMBER_TYPE_THREE
   },
   {
-    name: 'Member 4',
+    name: 'Martin',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Since graduating from Digipen Institute of Technology, Patagon has started his own company after amassing nearly 20 years of experience in the video games industry as an animator, CG cinematographer, and layout artist for Vivendi Games, Warner Brother Games and NCSoft.',
     type: MEMBER_TYPE_FIVE
   },
   {
-    name: 'Member 5',
+    name: 'Ryan',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Shamu is a veteran game-industry animator with 14 years of animation and AAA game development and animation production leadership experience.',
     type: MEMBER_TYPE_FOUR
   },
   {
-    name: 'Member 6',
+    name: 'Nicholas',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
-    type: MEMBER_TYPE_DEFAULT
+      'Marlin has 5 years of experience in the CG film industry, specializing in cartoon character modeling.',
+    type: MEMBER_TYPE_ONE
   },
   {
-    name: 'Member 7',
+    name: 'Stephen',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
-    type: MEMBER_TYPE_DEFAULT
+      'Bruce is a game designer who wrote multiple games prior to completing a bachelor’s in science in Computer Engineering. Since then he has focused on and mastered game audio since.',
+    type: MEMBER_TYPE_TWO
   },
   {
-    name: 'Member 8',
+    name: 'Alec',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Flounder helps video-game developers as a music composer and audio engineer. He is the founder and host of Music Design, a YouTube series analyzing video-game music, and Owl Theory Music, creating many popular RPG music packs.',
     type: MEMBER_TYPE_FIVE
   },
   {
-    name: 'Member 9',
+    name: 'Mason',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Blackfin is a character technical director currently studying at the Savannah College of Art and Design. He has two years of experience working on several shorts, including Bearly and Hex Limit.',
     type: MEMBER_TYPE_FOUR
   },
   {
-    name: 'Member 10',
+    name: 'Tzveta',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
+      'Cecilia is a senior concept artist, illustrator and designer. She has worked on multiple NCsoft game title releases, animated shorts, features and a children’s book written by a New York Times best-selling author.',
     type: MEMBER_TYPE_THREE
   },
   {
     name: 'Member 11',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
-    type: MEMBER_TYPE_TWO
+    description: '???',
+    type: MEMBER_TYPE_DEFAULT
   },
   {
     name: 'Member 12',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula nulla neque, at bibendum nibh aliquet iaculis. Nullam vulputate, lacus egestas rutrum euismod, tortor turpis scelerisque dolor, ornare pulvinar erat enim quis dui.',
-    type: MEMBER_TYPE_ONE
+    description: '???',
+    type: MEMBER_TYPE_DEFAULT
   }
 ];
 
